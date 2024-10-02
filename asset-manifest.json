@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sensorManagerApp/static/css/main.c9ffa74c.css",
-    "main.js": "/sensorManagerApp/static/js/main.7fb8a74f.js",
+    "main.js": "/sensorManagerApp/static/js/main.1ebea3c6.js",
     "static/media/man-taking-note.png": "/sensorManagerApp/static/media/man-taking-note.578e1679689f39584d15.png",
     "index.html": "/sensorManagerApp/index.html",
     "main.c9ffa74c.css.map": "/sensorManagerApp/static/css/main.c9ffa74c.css.map",
-    "main.7fb8a74f.js.map": "/sensorManagerApp/static/js/main.7fb8a74f.js.map"
+    "main.1ebea3c6.js.map": "/sensorManagerApp/static/js/main.1ebea3c6.js.map"
   },
   "entrypoints": [
     "static/css/main.c9ffa74c.css",
-    "static/js/main.7fb8a74f.js"
+    "static/js/main.1ebea3c6.js"
   ]
 }
