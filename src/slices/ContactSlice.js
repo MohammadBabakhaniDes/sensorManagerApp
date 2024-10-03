@@ -6,7 +6,7 @@ export const fetchSensors = createAsyncThunk(
   async () => {
     try {
       const response = await axios.get(
-        "https://88.198.159.175:9090/sensors?order=asc"
+        "http://88.198.159.175:9090/sensors?order=asc"
       );
 
       return response.data;
@@ -21,7 +21,7 @@ export const fetchRecordsOfSensor = createAsyncThunk(
   async (sensorID) => {
     try {
       const response = await axios.get(
-        `https://88.198.159.175:9090/records/${sensorID}?limit=100`
+        `http://88.198.159.175:9090/records/${sensorID}?limit=100`
       );
 
       return response.data;
@@ -38,7 +38,7 @@ export const createSensor = createAsyncThunk(
       console.log(sensor);
 
       const response = await axios.post(
-        "https://88.198.159.175:9090/sensors",
+        "http://88.198.159.175:9090/sensors",
         sensor
       );
       console.log(response);
@@ -55,7 +55,7 @@ export const deleteSensor = createAsyncThunk(
   async (sensorId) => {
     try {
       const response = await axios.delete(
-        `https://88.198.159.175:9090/sensors/${sensorId}`
+        `http://88.198.159.175:9090/sensors/${sensorId}`
       );
       return response.data;
     } catch (err) {
@@ -71,7 +71,7 @@ export const editSensor = createAsyncThunk(
 
     try {
       const response = await axios.put(
-        `https://88.198.159.175:9090/sensors/${sensor.id}`,
+        `http://88.198.159.175:9090/sensors/${sensor.id}`,
         sensor
       );
 

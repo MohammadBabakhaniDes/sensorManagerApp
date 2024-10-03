@@ -12,8 +12,7 @@ import { changePath } from "../slices/ContactSlice";
 
 const ViewContact = () => {
     const { contactId } = useParams();
-    const contact = useSelector(state => state.contacts.items.find(item => item.id == contactId));
-    const group = useSelector(state => state.groups.items.find(item => item.id === contact.group));
+    const contact = useSelector(state => state.contacts.items.find(item => item.id == contactId));    
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -90,9 +89,9 @@ const ViewContact = () => {
                                     </div>
                                 </Typography>
                                 <Divider />
-                                <Typography p={1.4} pb={0} variant="body1" fontWeight={"bold"} display="flex">
+                                {/* <Typography p={1.4} pb={0} variant="body1" fontWeight={"bold"} display="flex">
                                     <Typography fontWeight={"normal"}>گروه: &nbsp; </Typography> {group.name}
-                                </Typography>
+                                </Typography> */}
                             </CardContent>
                         </Grid>
                     </Grid>

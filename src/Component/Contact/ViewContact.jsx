@@ -44,10 +44,7 @@ const ViewContact = () => {
   );
   let doSkeleton = false;
   const records = tdContents;
-
-  console.log(tdContents);
-
-  // const group = useSelector(state => state.groups.items.find(item => item.id === contact.group));
+    
   const dispatch = useDispatch();
   const isDark = useSelector((state) => state.theme.isDark);
   const { pathname } = useLocation();
